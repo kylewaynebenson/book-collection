@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Collection App</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>My Book Collection</h1>
+    </header>
+    <main>
+        <!-- Same HTML structure as before, but add an input for file upload -->
+		<div class="input-container">
+			<label for="csvFile">Upload Goodreads CSV:</label>
+			<input type="file" id="csvFile">
+			<button id="loadButton">Load Collection</button>
+		</div>
+        <ul id="bookList" class="book-list"></ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
